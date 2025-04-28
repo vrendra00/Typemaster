@@ -1,12 +1,44 @@
+/* barlow-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/barlow-v12-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 :root {
     --orange: hsl(22,89%,52%);
     --orange-Lt: hsl(22,100%,69%);
     --blue: hsl(220,50%,17%);
     --blue-Lt: hsl(221,23%,58%);
-    --gray-Lt: hsl(198,28%,93%)
-    --white: hsl(0,0%,100%);
-
-
-
-
+    --gray-Lt: hsl(198,28%,93%);
+    --white: hsl(0,0%,100%); 
 }
+ *::before;
+ *::after{
+    box-sizing: border-box;
+ }
+ body{
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    color: var(--blue);
+    margin: 0;
+    padding-block: 24px;
+    min-height: 100vh;
+ }
+ h1,
+ h2,
+ h3{
+    margin:0;
+
+ }
+ button{
+    font-family:inherit;
+ }
